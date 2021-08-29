@@ -7,7 +7,7 @@
     --red: #ff172d;
     --teal: #0dbdb4;
     --blue: #1679dc;
-    --blueGlass: rgba(22, 121, 220, 75%);
+    --blueGlass: rgba(5, 124, 243, 90%);
     --cubic: cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -27,6 +27,19 @@ body {
     padding: 1em;
 }
 
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: .5em;
+}
+
+.card-title i {
+    font-size: .8em;
+}
+
 .list-group-item {
     background: var(--darkGray);
 }
@@ -39,6 +52,15 @@ body {
 }
 .intern {
     background: var(--teal);
+}
+.manager a {
+   color: var(--red);
+}
+.engineer a {
+   color: var(--blue);
+}
+.intern a {
+   color: var(--teal);
 }
 
 .jumbotron {

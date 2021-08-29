@@ -5,27 +5,6 @@
 
   Generates A Team Profile Page
 
-   <!-- ## Video 
-  [Link To Video](https://youtu.be/VgyQx0brp68) 
-
-  ## Step 1: Navigate to the Terminal
-  [![Reveal](./showcase/reveal.gif)](./showcase/reveal.gif)
-  ## Step 2: Open your Preferred Terminal
-  [![Git Bash Here](./showcase/gitbashhere.gif)](./showcase/gitbashhere.gif)
-  ## Step 3: Answer the Questions
-  [![Using the App](./showcase/usingtheApp.gif)](./showcase/usingtheApp.gif)
-  ## Step 4: Once you Answer All Questions, README is Generated
-  [![Final Use](./showcase/finalUse.gif)](./showcase/finalUse.gif)
-  ## Step 5: Now you can view the Generated README File
-  [![Generated](./showcase/generated.gif)](./showcase/generated.gif)
-  ## Step 6: You can Preview it in VS Code
-  [![Preview](./showcase/preview.gif)](./showcase/preview.gif)
-  ## Step 7: Or push it to Github and View it there
-  [![Final Preview](./showcase/finalPreview2.gif)](./showcase/finalPreview2.gif)
-
-  ## Final: Finished Screen
-  [![ScreenShot](./showcase/screenshot.JPG)](./showcase/screenshot.JPG) -->
-
   ## Table of Contents  
   * [Installation](#installation)  
   * [Usage](#usage) 

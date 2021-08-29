@@ -1,0 +1,28 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Team Profile Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strawhat19/Team-Profile-Generator.git"
+  },
+  "keywords": [
+    "Team",
+    "Profile",
+    "Generator"
+  ],
+  "author": "Rakib Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strawhat19/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/strawhat19/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2",
+    "jest": "^27.0.6"
+  }
+}

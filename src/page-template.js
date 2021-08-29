@@ -1,29 +1,35 @@
 const generateTeam = team => {
     const generateManager = manager => {
         return `
-        <h2 class="card-title">${manager.name}</h2>
-        <ul class="list-group">
-                <li class="list-group-item">ID: ${manager.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
-        </ul>
+        <div class="card manager">
+            <h2 class="card-title">${manager.name}</h2>
+            <ul class="list-group">
+                    <li class="list-group-item">ID: ${manager.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
+            </ul>
+        </div>
         `;
     };
     const generateEngineer = engineer => {
         return `
-        <h2 class="card-title">${engineer.name}</h2>
-        <ul class="list-group">
-                <li class="list-group-item">ID: ${engineer.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
-        </ul>
+        <div class="card engineer">
+            <h2 class="card-title">${engineer.name}</h2>
+            <ul class="list-group">
+                    <li class="list-group-item">ID: ${engineer.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
+            </ul>
+        </div>
         `;
     };
     const generateIntern = intern => {
         return `
-        <h2 class="card-title">${intern.name}</h2>
-        <ul class="list-group">
-                <li class="list-group-item">ID: ${intern.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
-        </ul>
+        <div class="card intern">
+            <h2 class="card-title">${intern.name}</h2>
+            <ul class="list-group">
+                    <li class="list-group-item">ID: ${intern.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
+            </ul>
+        </div>
         `;
     };
     const teamArr = [

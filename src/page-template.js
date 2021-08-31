@@ -6,6 +6,7 @@ const generateTeam = team => {
             <h2 class="card-title">${manager.getName()} <i class="fas fa-user-check"></i></h2>
             <ul class="list-group">
                     <li class="list-group-item">ID: ${manager.getID()}</li>
+                    <li class="list-group-item">Role: ${manager.getRole()}</li>
                     <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
             </ul>
@@ -19,6 +20,7 @@ const generateTeam = team => {
             <h2 class="card-title">${engineer.getName()} <i class="fas fa-user-cog"></i></h2>
             <ul class="list-group">
                     <li class="list-group-item">ID: ${engineer.getID()}</li>
+                    <li class="list-group-item">Role: ${engineer.getRole()}</li>
                     <li class="list-group-item">Github: <a href="https://github.com/${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a></li>
                     <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
             </ul>
@@ -32,6 +34,7 @@ const generateTeam = team => {
             <h2 class="card-title">${intern.getName()} <i class="fas fa-user-circle"></i></h2>
             <ul class="list-group">
                     <li class="list-group-item">ID: ${intern.getID()}</li>
+                    <li class="list-group-item">Role: ${intern.getRole()}</li>
                     <li class="list-group-item">School: ${intern.getSchool()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
             </ul>

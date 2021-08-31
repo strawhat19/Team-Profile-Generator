@@ -6,6 +6,35 @@ const fs = require(`fs`);
 const inquirer = require(`inquirer`);
 const render = require(`./src/page-template.js`);
 
+class Employee {
+    constructor(name,id,role,email,officeNumber) {
+        this.name = name;
+        this.id = id;
+        this.role = role;
+        this.email = email;
+        this.officeNumber = officeNumber;
+    }
+
+    logInfo = () => {
+        Object.values(this).forEach(value => {
+            console.log(value);
+        })
+    }
+}
+
+class Engineer extends Employee {
+    constructor(name,id,role,email,officeNumber,github) {
+        super(name,id,role,email,officeNumber);
+        this.github = github;
+    }
+}
+
+const employeeOne = new Employee(`Bobby`,5,`Boss`,`billybob@billybob.com`,15);
+employeeOne.logInfo();
+
+const engineer1 = new Engineer(`Engine`,15,`Developer`,`email@email.com`,12,`strawhat19`);
+engineer1.logInfo();
+
 const team = [
     {
         name: `Rick`,

@@ -4,14 +4,14 @@
   --creamWhite: #d1cdc7;
   --lightBlue: #00c2ff;
   --red: #ff172d;
-  --teal: #0dbdb4;
+  --green: #09bd7f;
   --blue: #1679dc;
   --blueGlass: rgba(5, 124, 243, 90%);
   --cubic: cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 body {
-  background: var(--darkGray);
+  background: #fff;
   color: #fff;
 }
 
@@ -77,10 +77,10 @@ body {
 }
 
 .intern {
-  background: var(--teal);
+  background: var(--green);
 }
 
 .intern a {
-  color: var(--teal);
+  color: var(--green);
 }
 /*# sourceMappingURL=style.css.map */

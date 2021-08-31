@@ -1,0 +1,86 @@
+/* Team Profile Styles */
+:root {
+  --darkGray: #181a1b;
+  --creamWhite: #d1cdc7;
+  --lightBlue: #00c2ff;
+  --red: #ff172d;
+  --teal: #0dbdb4;
+  --blue: #1679dc;
+  --blueGlass: rgba(5, 124, 243, 90%);
+  --cubic: cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+body {
+  background: var(--darkGray);
+  color: #fff;
+}
+
+.jumbotron {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--blueGlass)), to(var(--blueGlass))), url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(var(--blueGlass), var(--blueGlass)), url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+
+.team-area {
+  grid-gap: 2em;
+  padding: 5em 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  color: #fff;
+  background: black;
+  padding: 1em;
+  min-width: 300px;
+}
+
+.card .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: .5em;
+}
+
+.card .card-title i {
+  font-size: .8em;
+}
+
+.list-group-item {
+  background: var(--darkGray);
+}
+
+.manager {
+  background: var(--red);
+}
+
+.manager a {
+  color: var(--red);
+}
+
+.engineer {
+  background: var(--blue);
+}
+
+.engineer a {
+  color: var(--blue);
+}
+
+.intern {
+  background: var(--teal);
+}
+
+.intern a {
+  color: var(--teal);
+}
+/*# sourceMappingURL=style.css.map */

@@ -5,60 +5,31 @@ console.log(`Team Profile Generator!`);
 const fs = require(`fs`);
 const inquirer = require(`inquirer`);
 const render = require(`./src/page-template.js`);
+const path = require(`path`);
 
-class Employee {
-    constructor(name,id,role,email,officeNumber) {
-        this.name = name;
-        this.id = id;
-        this.role = role;
-        this.email = email;
-        this.officeNumber = officeNumber;
-    }
+const Manager = require(`./lib/Manager`);
+const Engineer = require(`./lib/Engineer`);
+const Intern = require(`./lib/Intern`);
 
-    logInfo = () => {
-        Object.values(this).forEach(value => {
-            console.log(value);
-        })
-    }
-}
-
-class Engineer extends Employee {
-    constructor(name,id,role,email,officeNumber,github) {
-        super(name,id,role,email,officeNumber);
-        this.github = github;
-    }
-}
-
-const employeeOne = new Employee(`Bobby`,5,`Boss`,`billybob@billybob.com`,15);
-employeeOne.logInfo();
-
-const engineer1 = new Engineer(`Engine`,15,`Developer`,`email@email.com`,12,`strawhat19`);
-engineer1.logInfo();
+const outputDirectory = path.resolve(__dirname,`dist`);
+const outputPath = path.join(outputDirectory,`generatedTeamProfile.html`);
 
 const team = [
-    {
-        name: `Rick`,
-        id: 1,
-        email: `rakib987@gmail.com`,
-        role: `Manager`
-    },{
-        name: `Rakib`,
-        id: 2,
-        email: `sanad_1919@yahoo.com`,
-        role: `Engineer`
-    },{
-        name: `Ricky`,
-        id: 3,
-        email: `rahmed@piratechs.com`,
-        role: `Intern`
-    }
+    new Manager(`Kyle`,1,`sanad_1919@yahoo.com`,19),
+    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
+    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
+    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
+    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
+    new Engineer(`Rick`,3,`rick@rick.com`,`Piratechs`),
+    new Intern(`Grayson`,4,`gray@gray.com`,`KSU`),
+    new Intern(`Grayson`,4,`gray@gray.com`,`KSU`),
+    new Intern(`Grayson`,4,`gray@gray.com`,`KSU`)
 ]
 
 console.log(`Generating...`);
 
-fs.writeFileSync(`generatedTeamProfile.html`, render(team), error => {
-    error ? console.log(error) : console.log(`Team Profile Successfully Generated! You can find it within this folder!`);
-})
+fs.writeFileSync(outputPath, render(team), `utf-8`);
 
-console.log(`Generated!`);
-
+setTimeout(() => {
+    console.log(`Generated!`);
+},1000);

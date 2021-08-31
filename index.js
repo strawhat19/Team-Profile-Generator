@@ -14,22 +14,38 @@ const Intern = require(`./lib/Intern`);
 const outputDirectory = path.resolve(__dirname,`dist`);
 const outputPath = path.join(outputDirectory,`generatedTeamProfile.html`);
 
-const team = [
-    new Manager(`Kyle`,1,`sanad_1919@yahoo.com`,19),
-    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
-    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
-    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
-    new Engineer(`Ricky`,2,`rakib987@gmail.com`,`strawhat19`),
-    new Engineer(`Rick`,3,`rick@rick.com`,`Piratechs`),
-    new Intern(`Grayson`,4,`gray@gray.com`,`KSU`),
-    new Intern(`Grayson`,4,`gray@gray.com`,`KSU`),
-    new Intern(`Grayson`,4,`gray@gray.com`,`KSU`)
-]
+const team = [];
 
-console.log(`Generating...`);
+generateTeamPage = team => {
+    fs.writeFileSync(outputPath, render(team), `utf-8`);
+}
 
-fs.writeFileSync(outputPath, render(team), `utf-8`);
+askQuestions = () => {
 
-setTimeout(() => {
-    console.log(`Generated!`);
-},1000);
+    inquirer.prompt([
+        {
+            name: `managerName`,
+            type: `input`,
+            message: `What is the Manager's Name?`
+        },{
+            name: `managerID`,
+            type: `input`,
+            message: `What is the Manager's Employee ID?`
+        },{
+            name: `managerEmail`,
+            type: `input`,
+            message: `What is the Manager's Email Address?`
+        },{
+            name: `officeNumber`,
+            type: `input`,
+            message: `What is the Office Number?`
+        }
+    ]).then(response => {
+        const manager = new Manager(response.managerName,response.managerID,response.managerEmail,response.officeNumber);
+        team.push(manager);
+        generateTeamPage(team);
+    })
+
+}
+
+askQuestions();

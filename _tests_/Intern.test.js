@@ -1,8 +1,15 @@
-const Employee = require(`../lib/Employee`);
+const Intern = require(`../lib/Intern`);
 
-describe(`Employee`,() => {
-    test(`Can instantiate Employee Instance`,() => {
-        const type = new Employee();
+describe(`Intern`,() => {
+    test(`Can instantiate Intern Instance`,() => {
+        const type = new Intern();
         expect(typeof type).toBe(`object`);
+    })
+})
+
+describe(`Intern Name`,() => {
+    test(`Intern Name is a usable String`,() => {
+        const name = Intern.name;
+        expect(typeof name).toBe(`string`);
     })
 })

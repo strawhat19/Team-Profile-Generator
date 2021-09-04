@@ -24,7 +24,7 @@ generateTeamPage = team => {
 askQuestions = () => {
 
     inquirer.prompt([
-        {
+    {
             name: `managerName`,
             type: `input`,
             message: `What is the Manager's Name?`,
@@ -111,7 +111,11 @@ teamQuestions = () => {
                 addIntern();
                 break;
             default:
+                console.log(`Generating Team Pege...`);
                 generateTeamPage(team);
+                setTimeout(() => {
+                    console.log(`Generated!`);
+                },1000)
         }
     })
 

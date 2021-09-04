@@ -6,3 +6,10 @@ describe(`Employee`,() => {
         expect(typeof type).toBe(`object`);
     })
 })
+
+describe(`Employee Name`,() => {
+    test(`Employee Name is a usable String`,() => {
+        const name = Employee.name;
+        expect(typeof name).toBe(`string`);
+    })
+})

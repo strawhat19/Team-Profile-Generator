@@ -5,6 +5,28 @@
 
   Generates A Team Profile Page
 
+   ## Video 
+  [Link To Video](https://youtu.be/oX5iVQQyod8) 
+
+  ## Step 1: Execute Command 'node index.js' to Initiate Program
+  [![Reveal](./images/step1.gif)](./images/step1.gif)
+  ## Step 2: The Program will Validate Results
+  [![Git Bash Here](./images/step2.gif)](./images/step2.gif)
+  ## Step 3: Answer the Questions
+  [![Using the App](./images/step3.gif)](./images/step3.gif)
+  ## Step 4: Add as many members as you would like
+  [![Final Use](./images/step4.gif)](./images/step4.gif)
+  ## Step 5: Different Questions for Interns and Engineers
+  [![Generated](./images/step5.gif)](./images/step5.gif)
+  ## Step 6: Forgot to Add an Engineer, Let's do that now!
+  [![Preview](./images/step6.gif)](./images/step6.gif)
+  ## Step 7: Adding our Last Intern
+  [![Final Preview](./images/step7.gif)](./images/step7.gif)
+  ## Step 8: When finished, select 'I do not want to add' to generate **PAGE** not pege
+  [![Final Preview](./images/step8.gif)](./images/step8.gif)
+  ## Step 9: You can find the generated team page in the /dist folder and open it in a browser
+  [![Final Preview](./images/step9.gif)](./images/step9.gif)
+
   ## Table of Contents  
   * [Installation](#installation)  
   * [Usage](#usage) 

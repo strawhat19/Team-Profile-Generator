@@ -111,7 +111,7 @@ teamQuestions = () => {
                 addIntern();
                 break;
             default:
-                console.log(`Generating Team Pege...`);
+                console.log(`Generating Team Page...`);
                 generateTeamPage(team);
                 setTimeout(() => {
                     console.log(`Generated!`);

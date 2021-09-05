@@ -24,7 +24,7 @@
   [![Final Preview](./images/step7.gif)](./images/step7.gif)
   ## Step 8: When finished, select 'I do not want to add' to generate **PAGE** not pege
   [![Final Preview](./images/step8.gif)](./images/step8.gif)
-  ## Step 9: You can find the generated team page in the /dist folder and open it in a browser
+  ## Step 9: You can find the Generated Team Page in the /dist folder and Open it in a Browser
   [![Final Preview](./images/step9.gif)](./images/step9.gif)
 
   ## Table of Contents  
